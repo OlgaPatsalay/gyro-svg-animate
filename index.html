@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <title>Gyro</title>
     <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
     <script src="js/jquery.viewportchecker.js" type="text/javascript"></script>
@@ -14,32 +15,30 @@
     <div class="logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
     <nav>
         <ul class="header-menu">
-            <li>Discover</li>
-            <li>Build</li>
-            <li>Press</li>
-            <li>Career</li>
-            <li>News</li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Build</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">News</a></li>
         </ul>
     </nav>
-    <div class="clearfix"></div>
 </header>
 <main class="page-wrap">
-
-    <div class="block-zero">
-        <div class="block-wrap">
-            <img src="images/img_03.png" alt="">
-            <div class="side-right">
+    <div class="block-zero container-fluid">
+        <div class="block-wrap container">
+            <img class="col-lg-6" src="images/img_03.png" alt="">
+            <div class="side-right col-lg-6">
                 <h2 class="side-title">Gyrometer Just Super</h2>
                 <div class="side-text">It is a long established fact that a reader will be distracted by the readable content of a page when </div>
                 <a href="#">Learn more</a>
             </div>
         </div>
     </div>
-    <div class="block-first">
-        <div class="block-wrap">
+    <div class="block-first container-fluid">
+        <div class="block-wrap container">
             <h2>Gyro Energy Network</h2>
             <div class="dscr">
-                <ul class="side-left">
+                <ul class="side-left col-md-4">
                     <li>
                         <span class="side-title">Anytime, Anywhere</span>
                         <span class="side-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of </span>
@@ -49,8 +48,8 @@
                         <span class="side-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of </span>
                     </li>
                 </ul>
-                <div class="side-center"><img src="" alt=""></div>
-                <ul class="side-right">
+                <div class="side-center  col-md-4"><img src="images/img_04.png" alt=""></div>
+                <ul class="side-right col-md-4">
                     <li>
                         <span class="side-title">Unlimited Possibilities</span>
                         <span class="side-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of </span>
@@ -63,8 +62,8 @@
             </div>
         </div>
     </div>
-    <div class="block-second">
-        <div class="block-wrap">
+    <div class="block-second container-fluid">
+        <div class="block-wrap container">
             <div>
                 <h2>Slipstream</h2>
                 <div class="text">It is a long established fact that a reader will be distracted by the readable content
@@ -75,8 +74,8 @@
             <img src="images/img_01.jpg" alt="">
         </div>
     </div>
-    <div class="block-third">
-        <div class="block-wrap">
+    <div class="block-third container-fluid">
+        <div class="block-wrap container">
             <div class="side-left">
                 <div class="svg-container">
                     <svg id="gyro" width="403.875" height="151.87">
@@ -205,8 +204,8 @@
             </div>
         </div>
     </div>
-    <div class="block-zero">
-        <div class="block-wrap">
+    <div class="block-zero container-fluid">
+        <div class="block-wrap container">
             <img src="images/img_03.png" alt="">
             <div class="side-right">
                 <h2 class="side-title">Gyrometer Just Super</h2>
@@ -215,7 +214,6 @@
             </div>
         </div>
     </div>
-
 </main>
 <script>
     var svgPaths = jQuery('path');
@@ -226,8 +224,8 @@
         path.style.strokeDashoffset = pathDimensions;
     };
     jQuery(document).ready(function() {
-        jQuery('.svg-container svg').addClass("hidden").viewportChecker({
-            classToAdd: 'visible animated',
+        jQuery('.svg-container svg').viewportChecker({
+            classToAdd: 'animated',
             offset: 100,
             repeat: true
         });
@@ -235,5 +233,8 @@
 </script>
 </body>
 </html>
+
+
+
 
 
