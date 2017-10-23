@@ -4,39 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Gyro</title>
     <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
     <script src="js/jquery.viewportchecker.js" type="text/javascript"></script>
 </head>
 <body>
 <header>
-    <div class="logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
-    <nav>
-        <ul class="header-menu">
-            <li><a href="#">Discover</a></li>
-            <li><a href="#">Build</a></li>
-            <li><a href="#">Press</a></li>
-            <li><a href="#">Career</a></li>
-            <li><a href="#">News</a></li>
-        </ul>
+    <nav class="nav  navbar-default">
+        <div class="container-fluid">
+            <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand logo" href="#">
+                            <img alt="Brand" src="images/logo.png">
+                        </a>
+                    </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Discover</a></li>
+                        <li><a href="#">Build</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Career</a></li>
+                        <li>
+                            <a href="#">News</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
     </nav>
 </header>
 <main class="page-wrap">
     <div class="block-zero container-fluid">
         <div class="block-wrap container">
-            <img class="col-lg-6" src="images/img_03.png" alt="">
-            <div class="side-right col-lg-6">
+            <div class="col-md-6">
+                <img class="img-responsive" src="images/img_03.png" alt="">
+            </div>
+            <div class="side-right col-md-6 text-right">
                 <h2 class="side-title">Gyrometer Just Super</h2>
-                <div class="side-text">It is a long established fact that a reader will be distracted by the readable content of a page when </div>
+                <div class="side-text">It is a long established fact that a reader will be distracted by the readable
+                    content of a page when
+                </div>
                 <a href="#">Learn more</a>
             </div>
         </div>
     </div>
     <div class="block-first container-fluid">
         <div class="block-wrap container">
-            <h2>Gyro Energy Network</h2>
+            <h2 class="text-center">Gyro Energy Network</h2>
             <div class="dscr">
                 <ul class="side-left col-md-4">
                     <li>
@@ -49,7 +75,7 @@
                     </li>
                 </ul>
                 <div class="side-center  col-md-4"><img src="images/img_04.png" alt=""></div>
-                <ul class="side-right col-md-4">
+                <ul class="side-right col-md-4 text-right">
                     <li>
                         <span class="side-title">Unlimited Possibilities</span>
                         <span class="side-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of </span>
@@ -64,19 +90,21 @@
     </div>
     <div class="block-second container-fluid">
         <div class="block-wrap container">
-            <div>
+            <div class="col-md-6">
                 <h2>Slipstream</h2>
                 <div class="text">It is a long established fact that a reader will be distracted by the readable content
                     of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
                     normal distribution of letters, as opposed to using 'Content
                 </div>
             </div>
-            <img src="images/img_01.jpg" alt="">
+            <div class="col-md-6">
+                <img class="img-responsive" src="images/img_01.jpg" alt="">
+            </div>
         </div>
     </div>
     <div class="block-third container-fluid">
         <div class="block-wrap container">
-            <div class="side-left">
+            <div class="side-left col-md-6">
                 <div class="svg-container">
                     <svg id="gyro" width="403.875" height="151.87">
                         <g>
@@ -195,7 +223,7 @@
                     </svg>
                 </div>
             </div>
-            <div class="side-right container">
+            <div class="side-right col-md-6 tex-right">
                 <h2 class="post">Balanced</h2>
                 <div class="text">It is a long established fact that a reader will be distracted by the readable content
                     of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
@@ -233,6 +261,9 @@
 </script>
 </body>
 </html>
+
+
+
 
 
 
